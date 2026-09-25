@@ -1,0 +1,33 @@
+{
+  "name": "intent-radar",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3100",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "setup:token": "python3 scripts/setup-token.py",
+    "collect": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/collect.ts",
+    "catalog": "node --experimental-strip-types scripts/catalog.ts",
+    "evaluate": "node --experimental-strip-types scripts/evaluate.ts",
+    "doctor": "node --env-file-if-exists=.env.local --experimental-strip-types scripts/doctor.ts",
+    "export:sample": "node --experimental-strip-types scripts/export-sample.ts"
+  },
+  "dependencies": {
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.17.0 <23"
+  }
+}

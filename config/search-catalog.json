@@ -1,0 +1,1013 @@
+{
+  "catalog": [
+    {
+      "id": "crm",
+      "name": "CRM",
+      "terms": {
+        "ru": [
+          "crm",
+          "срм",
+          "црм",
+          "учёт клиентов",
+          "учет клиентов"
+        ],
+        "uk": [
+          "crm",
+          "срм",
+          "облік клієнтів"
+        ],
+        "en": [
+          "crm",
+          "customer management"
+        ],
+        "es": [
+          "crm",
+          "gestión de clientes",
+          "gestion de clientes"
+        ]
+      },
+      "queries": {
+        "ru": [
+          "нужна CRM",
+          "CRM для недвижимости",
+          "внедрение CRM"
+        ],
+        "uk": [
+          "потрібна CRM",
+          "CRM для нерухомості",
+          "впровадження CRM"
+        ],
+        "en": [
+          "need a CRM",
+          "real estate CRM",
+          "CRM implementation"
+        ],
+        "es": [
+          "necesito un CRM",
+          "CRM inmobiliario",
+          "implementar CRM"
+        ]
+      }
+    },
+    {
+      "id": "web",
+      "name": "Сайты и лендинги",
+      "terms": {
+        "ru": [
+          "сайт",
+          "лендинг",
+          "лендос"
+        ],
+        "uk": [
+          "сайт",
+          "лендінг"
+        ],
+        "en": [
+          "website",
+          "landing page",
+          "web design"
+        ],
+        "es": [
+          "página web",
+          "pagina web",
+          "sitio web",
+          "landing page"
+        ]
+      },
+      "queries": {
+        "ru": [
+          "нужен сайт",
+          "сайт агентства недвижимости",
+          "ищу веб разработчика"
+        ],
+        "uk": [
+          "потрібен сайт",
+          "сайт нерухомості",
+          "шукаю розробника"
+        ],
+        "en": [
+          "need a website",
+          "real estate website",
+          "looking for web developer"
+        ],
+        "es": [
+          "necesito una web",
+          "web inmobiliaria",
+          "busco desarrollador web"
+        ]
+      }
+    },
+    {
+      "id": "ads",
+      "name": "Реклама и маркетинг",
+      "terms": {
+        "ru": [
+          "реклам",
+          "маркетинг",
+          "таргет",
+          "smm",
+          "seo",
+          "лидогенерац",
+          "заявки",
+          "заявок"
+        ],
+        "uk": [
+          "реклам",
+          "маркетинг",
+          "таргет",
+          "лідогенерац",
+          "ліди"
+        ],
+        "en": [
+          "marketing",
+          "advertising",
+          "facebook ads",
+          "instagram ads",
+          "lead generation",
+          "google ads",
+          "seo"
+        ],
+        "es": [
+          "publicidad",
+          "marketing",
+          "captación",
+          "captacion",
+          "anuncios",
+          "leads",
+          "seo"
+        ]
+      },
+      "queries": {
+        "ru": [
+          "ищу таргетолога",
+          "маркетинг недвижимости",
+          "нет заявок"
+        ],
+        "uk": [
+          "шукаю таргетолога",
+          "реклама нерухомості",
+          "немає заявок"
+        ],
+        "en": [
+          "looking for a marketer",
+          "real estate marketing",
+          "need more leads"
+        ],
+        "es": [
+          "busco experto publicidad",
+          "marketing inmobiliario",
+          "necesito leads"
+        ]
+      }
+    },
+    {
+      "id": "database",
+      "name": "Базы данных",
+      "terms": {
+        "ru": [
+          "базу данных",
+          "база данных",
+          "базы данных",
+          "каталог объектов",
+          "базу объектов"
+        ],
+        "uk": [
+          "база даних",
+          "базу даних",
+          "бази даних",
+          "каталог об’єктів"
+        ],
+        "en": [
+          "database",
+          "property database",
+          "data migration"
+        ],
+        "es": [
+          "base de datos",
+          "bases de datos",
+          "migración de datos"
+        ]
+      },
+      "queries": {
+        "ru": [
+          "нужна база данных",
+          "база объектов недвижимости",
+          "разработка базы данных"
+        ],
+        "uk": [
+          "потрібна база даних",
+          "база об’єктів нерухомості",
+          "розробка бази даних"
+        ],
+        "en": [
+          "need a database",
+          "property database",
+          "database developer"
+        ],
+        "es": [
+          "necesito base de datos",
+          "base de datos inmobiliaria",
+          "desarrollador base de datos"
+        ]
+      }
+    },
+    {
+      "id": "automation",
+      "name": "Автоматизация и интеграции",
+      "terms": {
+        "ru": [
+          "автоматизац",
+          "интеграц",
+          "бот",
+          "n8n",
+          "make.com",
+          "zapier"
+        ],
+        "uk": [
+          "автоматизац",
+          "інтеграц",
+          "бот"
+        ],
+        "en": [
+          "automation",
+          "automate",
+          "integration",
+          "workflow",
+          "chatbot",
+          "n8n",
+          "zapier"
+        ],
+        "es": [
+          "automatiz",
+          "integración",
+          "integracion",
+          "chatbot"
+        ]
+      },
+      "queries": {
+        "ru": [
+          "нужна автоматизация",
+          "интеграция CRM",
+          "автоматизация агентства"
+        ],
+        "uk": [
+          "потрібна автоматизація",
+          "інтеграція CRM",
+          "автоматизація агенції"
+        ],
+        "en": [
+          "need automation",
+          "CRM integration",
+          "automate real estate"
+        ],
+        "es": [
+          "necesito automatizar",
+          "integración CRM",
+          "automatización inmobiliaria"
+        ]
+      }
+    },
+    {
+      "id": "development",
+      "name": "Заказная разработка",
+      "terms": {
+        "ru": [
+          "разработчик",
+          "разработчика",
+          "разработку",
+          "приложение",
+          "личный кабинет",
+          "портал",
+          "программист"
+        ],
+        "uk": [
+          "розробник",
+          "розробника",
+          "розробку",
+          "додаток",
+          "кабінет"
+        ],
+        "en": [
+          "developer",
+          "custom software",
+          "application",
+          "software development"
+        ],
+        "es": [
+          "desarrollador",
+          "desarrollo",
+          "software a medida",
+          "aplicación",
+          "aplicacion"
+        ]
+      },
+      "queries": {
+        "ru": [
+          "ищу разработчика",
+          "заказная разработка",
+          "портал недвижимости"
+        ],
+        "uk": [
+          "шукаю програміста",
+          "замовна розробка",
+          "портал нерухомості"
+        ],
+        "en": [
+          "looking for a developer",
+          "custom software real estate",
+          "need custom software"
+        ],
+        "es": [
+          "busco desarrollador",
+          "software inmobiliario",
+          "necesito software a medida"
+        ]
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "crm-ru-0",
+      "topicId": "crm",
+      "language": "ru",
+      "text": "нужна CRM",
+      "tier": "focused",
+      "enabled": true
+    },
+    {
+      "id": "crm-ru-1",
+      "topicId": "crm",
+      "language": "ru",
+      "text": "CRM для недвижимости",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-ru-2",
+      "topicId": "crm",
+      "language": "ru",
+      "text": "внедрение CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-uk-0",
+      "topicId": "crm",
+      "language": "uk",
+      "text": "потрібна CRM",
+      "tier": "focused",
+      "enabled": true
+    },
+    {
+      "id": "crm-uk-1",
+      "topicId": "crm",
+      "language": "uk",
+      "text": "CRM для нерухомості",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-uk-2",
+      "topicId": "crm",
+      "language": "uk",
+      "text": "впровадження CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-en-0",
+      "topicId": "crm",
+      "language": "en",
+      "text": "need a CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-en-1",
+      "topicId": "crm",
+      "language": "en",
+      "text": "real estate CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-en-2",
+      "topicId": "crm",
+      "language": "en",
+      "text": "CRM implementation",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-es-0",
+      "topicId": "crm",
+      "language": "es",
+      "text": "necesito un CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-es-1",
+      "topicId": "crm",
+      "language": "es",
+      "text": "CRM inmobiliario",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "crm-es-2",
+      "topicId": "crm",
+      "language": "es",
+      "text": "implementar CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-ru-0",
+      "topicId": "web",
+      "language": "ru",
+      "text": "нужен сайт",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-ru-1",
+      "topicId": "web",
+      "language": "ru",
+      "text": "сайт агентства недвижимости",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-ru-2",
+      "topicId": "web",
+      "language": "ru",
+      "text": "ищу веб разработчика",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-uk-0",
+      "topicId": "web",
+      "language": "uk",
+      "text": "потрібен сайт",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-uk-1",
+      "topicId": "web",
+      "language": "uk",
+      "text": "сайт нерухомості",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-uk-2",
+      "topicId": "web",
+      "language": "uk",
+      "text": "шукаю розробника",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-en-0",
+      "topicId": "web",
+      "language": "en",
+      "text": "need a website",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-en-1",
+      "topicId": "web",
+      "language": "en",
+      "text": "real estate website",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-en-2",
+      "topicId": "web",
+      "language": "en",
+      "text": "looking for web developer",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-es-0",
+      "topicId": "web",
+      "language": "es",
+      "text": "necesito una web",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-es-1",
+      "topicId": "web",
+      "language": "es",
+      "text": "web inmobiliaria",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "web-es-2",
+      "topicId": "web",
+      "language": "es",
+      "text": "busco desarrollador web",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-ru-0",
+      "topicId": "ads",
+      "language": "ru",
+      "text": "ищу таргетолога",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-ru-1",
+      "topicId": "ads",
+      "language": "ru",
+      "text": "маркетинг недвижимости",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-ru-2",
+      "topicId": "ads",
+      "language": "ru",
+      "text": "нет заявок",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-uk-0",
+      "topicId": "ads",
+      "language": "uk",
+      "text": "шукаю таргетолога",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-uk-1",
+      "topicId": "ads",
+      "language": "uk",
+      "text": "реклама нерухомості",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-uk-2",
+      "topicId": "ads",
+      "language": "uk",
+      "text": "немає заявок",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-en-0",
+      "topicId": "ads",
+      "language": "en",
+      "text": "looking for a marketer",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-en-1",
+      "topicId": "ads",
+      "language": "en",
+      "text": "real estate marketing",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-en-2",
+      "topicId": "ads",
+      "language": "en",
+      "text": "need more leads",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-es-0",
+      "topicId": "ads",
+      "language": "es",
+      "text": "busco experto publicidad",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-es-1",
+      "topicId": "ads",
+      "language": "es",
+      "text": "marketing inmobiliario",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "ads-es-2",
+      "topicId": "ads",
+      "language": "es",
+      "text": "necesito leads",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-ru-0",
+      "topicId": "database",
+      "language": "ru",
+      "text": "нужна база данных",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-ru-1",
+      "topicId": "database",
+      "language": "ru",
+      "text": "база объектов недвижимости",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-ru-2",
+      "topicId": "database",
+      "language": "ru",
+      "text": "разработка базы данных",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-uk-0",
+      "topicId": "database",
+      "language": "uk",
+      "text": "потрібна база даних",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-uk-1",
+      "topicId": "database",
+      "language": "uk",
+      "text": "база об’єктів нерухомості",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-uk-2",
+      "topicId": "database",
+      "language": "uk",
+      "text": "розробка бази даних",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-en-0",
+      "topicId": "database",
+      "language": "en",
+      "text": "need a database",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-en-1",
+      "topicId": "database",
+      "language": "en",
+      "text": "property database",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-en-2",
+      "topicId": "database",
+      "language": "en",
+      "text": "database developer",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-es-0",
+      "topicId": "database",
+      "language": "es",
+      "text": "necesito base de datos",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-es-1",
+      "topicId": "database",
+      "language": "es",
+      "text": "base de datos inmobiliaria",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "database-es-2",
+      "topicId": "database",
+      "language": "es",
+      "text": "desarrollador base de datos",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-ru-0",
+      "topicId": "automation",
+      "language": "ru",
+      "text": "нужна автоматизация",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-ru-1",
+      "topicId": "automation",
+      "language": "ru",
+      "text": "интеграция CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-ru-2",
+      "topicId": "automation",
+      "language": "ru",
+      "text": "автоматизация агентства",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-uk-0",
+      "topicId": "automation",
+      "language": "uk",
+      "text": "потрібна автоматизація",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-uk-1",
+      "topicId": "automation",
+      "language": "uk",
+      "text": "інтеграція CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-uk-2",
+      "topicId": "automation",
+      "language": "uk",
+      "text": "автоматизація агенції",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-en-0",
+      "topicId": "automation",
+      "language": "en",
+      "text": "need automation",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-en-1",
+      "topicId": "automation",
+      "language": "en",
+      "text": "CRM integration",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-en-2",
+      "topicId": "automation",
+      "language": "en",
+      "text": "automate real estate",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-es-0",
+      "topicId": "automation",
+      "language": "es",
+      "text": "necesito automatizar",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-es-1",
+      "topicId": "automation",
+      "language": "es",
+      "text": "integración CRM",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "automation-es-2",
+      "topicId": "automation",
+      "language": "es",
+      "text": "automatización inmobiliaria",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-ru-0",
+      "topicId": "development",
+      "language": "ru",
+      "text": "ищу разработчика",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-ru-1",
+      "topicId": "development",
+      "language": "ru",
+      "text": "заказная разработка",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-ru-2",
+      "topicId": "development",
+      "language": "ru",
+      "text": "портал недвижимости",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-uk-0",
+      "topicId": "development",
+      "language": "uk",
+      "text": "шукаю програміста",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-uk-1",
+      "topicId": "development",
+      "language": "uk",
+      "text": "замовна розробка",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-uk-2",
+      "topicId": "development",
+      "language": "uk",
+      "text": "портал нерухомості",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-en-0",
+      "topicId": "development",
+      "language": "en",
+      "text": "looking for a developer",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-en-1",
+      "topicId": "development",
+      "language": "en",
+      "text": "custom software real estate",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-en-2",
+      "topicId": "development",
+      "language": "en",
+      "text": "need custom software",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-es-0",
+      "topicId": "development",
+      "language": "es",
+      "text": "busco desarrollador",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-es-1",
+      "topicId": "development",
+      "language": "es",
+      "text": "software inmobiliario",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "development-es-2",
+      "topicId": "development",
+      "language": "es",
+      "text": "necesito software a medida",
+      "tier": "focused",
+      "enabled": false
+    },
+    {
+      "id": "broad-0",
+      "topicId": "crm",
+      "language": "und",
+      "text": "CRM",
+      "tier": "broad",
+      "enabled": false
+    },
+    {
+      "id": "broad-1",
+      "topicId": "ads",
+      "language": "und",
+      "text": "Facebook",
+      "tier": "broad",
+      "enabled": false
+    },
+    {
+      "id": "broad-2",
+      "topicId": "ads",
+      "language": "und",
+      "text": "Instagram",
+      "tier": "broad",
+      "enabled": false
+    },
+    {
+      "id": "broad-3",
+      "topicId": "ads",
+      "language": "und",
+      "text": "Meta",
+      "tier": "broad",
+      "enabled": false
+    },
+    {
+      "id": "broad-4",
+      "topicId": "ads",
+      "language": "und",
+      "text": "маркетинг",
+      "tier": "broad",
+      "enabled": false
+    },
+    {
+      "id": "broad-5",
+      "topicId": "ads",
+      "language": "und",
+      "text": "marketing",
+      "tier": "broad",
+      "enabled": false
+    }
+  ],
+  "streams": [
+    {
+      "id": "property-ru-uk",
+      "name": "Недвижимость · RU/UK",
+      "languages": [
+        "ru",
+        "uk",
+        "mixed"
+      ],
+      "topicIds": [],
+      "intentIds": [],
+      "includeUnknownLanguage": true,
+      "industry": "property",
+      "excludedProjectCountries": [],
+      "includeUnknownGeography": true
+    },
+    {
+      "id": "property-en",
+      "name": "Real estate · EN",
+      "languages": [
+        "en"
+      ],
+      "topicIds": [],
+      "intentIds": [],
+      "includeUnknownLanguage": true,
+      "industry": "property",
+      "excludedProjectCountries": [],
+      "includeUnknownGeography": true
+    },
+    {
+      "id": "property-es",
+      "name": "Inmobiliario · ES",
+      "languages": [
+        "es"
+      ],
+      "topicIds": [],
+      "intentIds": [],
+      "includeUnknownLanguage": true,
+      "industry": "property",
+      "excludedProjectCountries": [],
+      "includeUnknownGeography": true
+    },
+    {
+      "id": "software",
+      "name": "CRM / данные / разработка · все ниши",
+      "languages": [],
+      "topicIds": [
+        "crm",
+        "database",
+        "automation",
+        "development"
+      ],
+      "intentIds": [],
+      "includeUnknownLanguage": true,
+      "industry": "any",
+      "excludedProjectCountries": [],
+      "includeUnknownGeography": true
+    }
+  ]
+}

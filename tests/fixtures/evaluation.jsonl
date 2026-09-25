@@ -1,0 +1,28 @@
+{"text":"Хлопці, потрібна CRM для нерухомості. Хто чим користується?","intent":"solution","industry":"property","language":"uk"}
+{"text":"Ищу разработчика для агентства недвижимости. Нужен сайт с каталогом объектов.","intent":"contractor","industry":"property","language":"ru"}
+{"text":"Настраиваем рекламу под ключ для риелторов. Наше агентство поможет с запуском.","intent":"offer","industry":"property","language":"ru"}
+{"text":"Нам не нужна CRM, у нас уже есть своя база данных.","intent":"mention","industry":"unknown","language":"ru"}
+{"text":"Кто какой CRM пользуется для работы?","intent":"discussion","industry":"unknown","language":"ru"}
+{"text":"У нас теряются заявки при передаче между менеджерами.","intent":"problem","industry":"unknown","language":"ru"}
+{"text":"Потрібен сайт для компанії з ремонту квартир.","intent":"solution","industry":"adjacent","language":"uk"}
+{"text":"Шукаю програміста для автоматизації обліку клієнтів.","intent":"contractor","industry":"unknown","language":"uk"}
+{"text":"Пропонуємо інтеграцію CRM для забудовників.","intent":"offer","industry":"property","language":"uk"}
+{"text":"У відділі продажів гублять ліди, немає зрозумілого обліку.","intent":"problem","industry":"unknown","language":"uk"}
+{"text":"I need a CRM for our real estate agency.","intent":"solution","industry":"property","language":"en"}
+{"text":"We are looking for a developer to build a property database.","intent":"contractor","industry":"unknown","language":"en"}
+{"text":"Our agency offers marketing for real estate teams.","intent":"offer","industry":"property","language":"en"}
+{"text":"We are not looking for a developer. Our website is ready.","intent":"mention","industry":"unknown","language":"en"}
+{"text":"Which CRM are you using for your team?","intent":"discussion","industry":"unknown","language":"en"}
+{"text":"We are losing leads with our current CRM.","intent":"problem","industry":"unknown","language":"en"}
+{"text":"Necesito un CRM para nuestra agencia inmobiliaria.","intent":"solution","industry":"property","language":"es"}
+{"text":"Busco desarrollador para una base de datos inmobiliaria.","intent":"contractor","industry":"property","language":"es"}
+{"text":"Ofrecemos publicidad para una agencia inmobiliaria.","intent":"offer","industry":"property","language":"es"}
+{"text":"No necesito un CRM para nuestra empresa.","intent":"mention","industry":"unknown","language":"es"}
+{"text":"¿Qué CRM usáis para la empresa?","intent":"discussion","industry":"unknown","language":"es"}
+{"text":"Necesito una página web para mi empresa de reformas.","intent":"solution","industry":"adjacent","language":"es"}
+{"text":"CRM?","intent":"mention","industry":"unknown","language":"und"}
+{"text":"Сегодня гуляли у моря и пили кофе.","intent":"unmatched","industry":"unknown","language":"und"}
+{"text":"Нужен сайт под ключ для застройщика.","intent":"solution","industry":"property","language":"ru"}
+{"text":"Ищу CRM, не хочу снова потерять базу клиентов.","intent":"solution","industry":"unknown","language":"ru"}
+{"text":"Can anyone recommend a website developer for a renovation business?","intent":"contractor","industry":"adjacent","language":"en"}
+{"text":"Ищу таргетолога, но услуги сам не предлагаю.","intent":"contractor","industry":"unknown","language":"ru"}

@@ -1,0 +1,12 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {analyze} from '../lib/analysis.ts';
+import {defaults} from '../lib/catalog.ts';
+const input=process.argv[2]??'tests/fixtures/evaluation.jsonl';
+const rows=readFileSync(input,'utf8').split('\n').filter(l=>l.trim()).map(l=>JSON.parse(l) as {text:string;intent:string;industry:string;language:string});
+if(!rows.length||rows.some(r=>typeof r.text!=='string'||typeof r.intent!=='string'||typeof r.industry!=='string'||typeof r.language!=='string'))throw Error('Expected JSONL with text,intent,industry,language');
+const confusion:Record<string,Record<string,number>>={},byLanguage:Record<string,{n:number;intentCorrect:number}>={};let intent=0,industry=0,language=0;
+const errors=rows.flatMap((r,i)=>{const a=analyze(r.text,defaults);confusion[r.intent]??={};confusion[r.intent][a.category]=(confusion[r.intent][a.category]??0)+1;byLanguage[r.language]??={n:0,intentCorrect:0};byLanguage[r.language].n++;if(a.category===r.intent){intent++;byLanguage[r.language].intentCorrect++;}if(a.industry===r.industry)industry++;if(a.language.code===r.language)language++;return a.category!==r.intent||a.industry!==r.industry||a.language.code!==r.language?[{row:i+1,expected:{intent:r.intent,industry:r.industry,language:r.language},actual:{intent:a.category,industry:a.industry,language:a.language.code}}]:[];});
+const perClass=Object.keys(confusion).map(c=>{const tp=confusion[c]?.[c]??0,actual=Object.values(confusion[c]).reduce((a,b)=>a+b,0),predicted=Object.values(confusion).reduce((a,b)=>a+(b[c]??0),0);return {class:c,support:actual,precision:predicted?tp/predicted:null,recall:actual?tp/actual:null};});
+const report={sample:input==='tests/fixtures/evaluation.jsonl'?'synthetic-development-fixture':'provided-labelled-sample',warning:'Не backtest рынка. Синтетические примеры видны при разработке; независимой оценки качества на реальных данных нет.',total:rows.length,intentAccuracy:intent/rows.length,industryAccuracy:industry/rows.length,languageAccuracy:language/rows.length,confusion,perClass,byLanguage,errors};
+mkdirSync('data',{recursive:true});writeFileSync('data/evaluation.json',JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({total:rows.length,intentAccuracy:report.intentAccuracy,industryAccuracy:report.industryAccuracy,languageAccuracy:report.languageAccuracy,errors,report:'data/evaluation.json'},null,2));

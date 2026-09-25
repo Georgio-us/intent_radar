@@ -1,0 +1,11 @@
+import {writeFileSync} from 'node:fs';
+import {catalog,allQueries,defaultStreams} from '../lib/catalog.ts';
+const lines=['# Словарь и поисковые гипотезы Reset','','Источник: `lib/catalog.ts`. Генерация: `npm run catalog`. Это предложенные формулировки, не подтверждённая поисковая частотность.','','## Направления и слова','','| Направление | Язык | Слова анализа |','|---|---|---|'];
+for(const t of catalog)for(const [lang,terms] of Object.entries(t.terms))lines.push(`| ${t.name} | ${lang} | ${terms.join(', ')} |`);
+lines.push('','## Запросы к API','','Всего '+allQueries.length+'. Включены только два стартовых запроса CRM RU/UK. Остальные выбираются в интерфейсе; максимум три на запуск. Не предполагаем поддержку Boolean AND/OR или точной фразы — семантику проверим на API.','','| ID | Язык | Запрос | Тип | Начальный выбор |','|---|---|---|---|---|');
+for(const q of allQueries)lines.push(`| ${q.id} | ${q.language} | ${q.text} | ${q.tier} | ${q.enabled?'Да':'Нет'} |`);
+lines.push('','## Потоки','','| Поток | Языки | Отрасль |','|---|---|---|');for(const s of defaultStreams)lines.push(`| ${s.name} | ${s.languages.join(', ')||'Все'} | ${s.industry} |`);
+lines.push('','## Что расширять по результатам исследования','','- Словоформы, разговорные сокращения, опечатки и названия CRM: включать после проверки, какие новые подходящие публикации они дают.','- Facebook/Instagram/Meta сами по себе — широкие шумные запросы, выключены. Украинское «мета» означает также «цель»; не считать его автоматически упоминанием компании.','- Высокий приоритет: явно ищет исполнителя + недвижимость. Вопрос о продукте не означает готовность заказать разработку.','- Текущий анализ правил приблизителен: отрицания, цитаты, сарказм и смешанные намерения могут распознаваться неверно.','');
+writeFileSync('docs/SEARCH_CATALOG.md',lines.join('\n'));
+writeFileSync('config/search-catalog.json',JSON.stringify({catalog,queries:allQueries,streams:defaultStreams},null,2)+'\n');
+console.log(`${allQueries.length} запросов, ${catalog.length} направлений, ${defaultStreams.length} потока; документы обновлены.`);

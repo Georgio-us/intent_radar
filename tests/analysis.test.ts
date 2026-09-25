@@ -1,0 +1,15 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {analyze,detectLanguage,streamExclusions,hasTerm} from '../lib/analysis.ts';
+import {defaults,defaultStreams} from '../lib/catalog.ts';
+import {validStreams,validQueries,validTopics} from '../lib/validation.ts';
+test('turnkey demand is not a vendor offer',()=>assert.equal(analyze('Нужен сайт под ключ для застройщика',defaults).category,'solution'));
+test('Latin brand boundaries do not match metadata',()=>{assert.equal(hasTerm('metadata','meta'),false);assert.equal(hasTerm('Meta Ads','meta'),true);});
+test('negative demand and quoted ambiguous context never get confidence claims',()=>assert.equal(analyze('Нам не нужна CRM',defaults).category,'mention'));
+test('short ambiguous text has unknown language',()=>assert.equal(detectLanguage('CRM?').code,'und'));
+test('four language examples',()=>{for(const [text,lang] of [['Ищу разработчика для сайта недвижимости','ru'],['Шукаю розробника для агенції нерухомості','uk'],['I need a CRM for our real estate agency','en'],['Necesito un CRM para la agencia inmobiliaria','es']])assert.equal(detectLanguage(text).code,lang,text);});
+test('property demand ranks above same demand without property',()=>assert.ok(analyze('Нужна CRM для недвижимости',defaults).score>analyze('Нужна CRM',defaults).score));
+test('language never assigns geography; unknown is retained by default',()=>{const a=analyze('Нужна CRM для недвижимости',defaults);const s={...defaultStreams[0],excludedProjectCountries:['RU']};assert.deepEqual(streamExclusions(a,s,'ru'),[]);assert.ok(streamExclusions(a,s,'ru','RU').includes('geography'));assert.ok(streamExclusions(a,{...s,includeUnknownGeography:false},'ru').includes('geography'));});
+test('general software requests survive non-property stream',()=>{const a=analyze('Нужна база данных для производства',defaults);assert.deepEqual(streamExclusions(a,defaultStreams[3],'ru'),[]);assert.ok(streamExclusions(a,defaultStreams[0],'ru').includes('industry'));});
+test('invalid settings rejected without mutating storage',()=>{assert.equal(validTopics([{id:'x',name:'x',enabled:true,words:['']}]),false);assert.equal(validStreams([{...defaultStreams[0],excludedProjectCountries:['Russia']}]),false);assert.equal(validQueries([{id:'q',text:'x',topicId:'crm',language:'xx',tier:'focused',enabled:true}]),false);});
+test('request for a CRM for an agency does not imply hiring the agency',()=>assert.equal(analyze('Necesito un CRM para nuestra agencia inmobiliaria.',defaults).category,'solution'));
