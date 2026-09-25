@@ -17,3 +17,10 @@ test('concurrent collectors use a shared database lease',async()=>{const s=new S
 test('local daily budget prevents further network calls',async()=>{const s=new Store(':memory:');try{const id=s.startRun('q','CRM','2026-09-24','2026-09-25');for(let i=0;i<100;i++)s.recordRequest(id);s.finishRun(id,'complete','');let calls=0;await assert.rejects(()=>collect(s,'dummy',['crm-ru-0'],(async()=>{calls++;return new Response('{}');}) as typeof fetch),/бюджет/);assert.equal(calls,0);}finally{s.close();}});
 test('credentials stay in authorization header, never in URL',async()=>{let called=false;await fetchPage({token:'SECRET',query:'CRM',since:'2026-09-24',until:'2026-09-25',fetcher:(async(url:URL|string,init:RequestInit)=>{called=true;assert.ok(!String(url).includes('SECRET'));assert.equal((init.headers as Record<string,string>).Authorization,'Bearer SECRET');return new Response('{"data":[]}');}) as typeof fetch});assert.ok(called);});
 test('completed run advances watermark; repeat uses overlap and preserves first seen',async()=>{const s=new Store(':memory:');try{await collect(s,'dummy',['crm-ru-0'],fake({data:[media]}));const checkpoint=s.checkpoint('crm-ru-0','нужна CRM')!;const first=s.rows()[0].first_seen_at;let since='';await collect(s,'dummy',['crm-ru-0'],(async(url:URL|string)=>{since=new URL(String(url)).searchParams.get('since')!;return new Response(JSON.stringify({data:[media]}));}) as typeof fetch);assert.equal(Number(since),Math.floor((Date.parse(checkpoint)-600000)/1000));assert.equal(s.rows()[0].first_seen_at,first);}finally{s.close();}});
+
+test('collects more than three selected queries sequentially and deduplicates posts',async()=>{
+ const store=new Store(':memory:');let calls=0;
+ store.set('queries',Array.from({length:5},(_,i)=>({id:'q'+i,topicId:'crm',language:'ru',text:'CRM '+i,tier:'focused',enabled:true})));
+ const result=await collect(store,'test-token',undefined,async()=>{calls++;return new Response(JSON.stringify({data:[media]}));});
+ assert.equal(calls,5);assert.equal(result.requests,5);assert.equal(result.received,5);assert.equal(result.inserted,1);assert.equal(result.partial,0);store.close();
+});

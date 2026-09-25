@@ -3,7 +3,7 @@ import {examples} from '../../../lib/radar.ts';
 import {validTopics,validStreams,validQueries,localRequest} from '../../../lib/validation.ts';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
-export async function GET(req:Request){const source=new URL(req.url).searchParams.get('source')==='threads'?'threads':'demo';return Response.json(read(source),{headers:{'Cache-Control':'no-store'}});}
+export async function GET(req:Request){const source=new URL(req.url).searchParams.get('source')==='demo'?'demo':'threads';return Response.json(read(source),{headers:{'Cache-Control':'no-store'}});}
 export async function POST(req:Request){
  if(!localRequest(req))return Response.json({error:'Недопустимый источник запроса'},{status:403});
  try{
