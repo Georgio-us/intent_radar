@@ -2,7 +2,8 @@ import {NextResponse, type NextRequest} from 'next/server';
 import {createHash,timingSafeEqual} from 'node:crypto';
 const equal=(a:string,b:string)=>timingSafeEqual(createHash('sha256').update(a).digest(),createHash('sha256').update(b).digest());
 export function proxy(req:NextRequest){
- if(req.nextUrl.pathname==='/api/health')return NextResponse.next();
+ const path=req.nextUrl.pathname;
+ if(['/api/health','/privacy','/data-deletion'].includes(path)||path.startsWith('/_next/static/'))return NextResponse.next();
  const password=process.env.RADAR_PASSWORD;
  if(!password){
   if(process.env.NODE_ENV==='production')return new NextResponse('Set RADAR_PASSWORD in Railway Variables.',{status:503});
