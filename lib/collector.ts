@@ -1,7 +1,6 @@
 import {Store} from './store.ts';
 import {fetchPage,ThreadsError} from './threads.ts';
 import {defaults,allQueries,type Topic,type SearchQuery} from './catalog.ts';
-export const LOCAL_DAILY_BUDGET=100; // Our safety budget, not Meta's published quota.
 export async function collect(store:Store,token:string,queryIds?:string[],fetcher?:typeof fetch){
  if(!token)throw new ThreadsError('missing_token','Добавьте токен THREADS_ACCESS_TOKEN в Variables сервиса Railway.');
  if(store.get<number>('cooldownUntil',0)>Date.now())throw new ThreadsError('cooldown','Ожидаем окончания паузы после ограничения API.');
@@ -17,7 +16,6 @@ export async function collect(store:Store,token:string,queryIds?:string[],fetche
   const runId=store.startRun(q.id,q.text,since,until);let after:string|undefined;const seen=new Set<string>();
   try{
    for(let page=0;page<2;page++){
-    if(store.requestCount()>=LOCAL_DAILY_BUDGET)throw new ThreadsError('budget','Достигнут локальный бюджет 100 запросов за 24 часа. Это наше ограничение, не квота Meta.');
     store.recordRequest(runId);requests++;
     const result=await fetchPage({token,query:q.text,since,until,after,fetcher});
     received+=result.media.length;
